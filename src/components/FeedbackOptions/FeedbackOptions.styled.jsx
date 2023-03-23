@@ -1,18 +1,22 @@
-import styled from "styled-components";
+import styled from 'styled-components';
 
-export const Button = styled.button`
-    width: 70px;
-    padding: 5px;
-    background-color: #6B8E23;
-    color: #ffffff;
-    border: none; 
-    cursor: pointer;
+export const List = styled.ul`
+  list-style: none;
+  display: flex;
+  gap: 5px;
+  padding-left: 0;
+`;
 
- :not(:last-child) {
-    margin-right: 20px;
+export const Item = styled.li`
+  width: 70px;
+  padding: 5px;
+  background-color: #6b8e23;
+  color: #ffffff;
+  border: none;
+  text-align: center;
+  cursor: pointer;
 
- :hover {
-    background-color: #008000; 
- }
- }
-`
+  :hover {
+    background-color: #008000;
+  }
+`;
