@@ -6,6 +6,5 @@ export const Container = styled.div`
   height: auto;
   margin: 0 auto;
   justify-content: center;
-  font-size: 40;
   background-color: #8FBC8F;
 `;
