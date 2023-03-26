@@ -7,7 +7,7 @@ const FeedbackOptions = ({ options, onLeaveFeedback }) => {
     <div>
       <List>
         {options.map(item => (
-          <Item onClick={onLeaveFeedback}>
+          <Item onClick={onLeaveFeedback} key={item}>
             {item[0].toUpperCase() + item.slice(1)}
           </Item>
         ))}
@@ -20,9 +20,5 @@ export default FeedbackOptions;
 
 FeedbackOptions.propTypes = {
   onLeaveFeedback: PropTypes.func.isRequired,
-  options: PropTypes.arrayOf(
-    PropTypes.shape({
-      item: PropTypes.string.isRequired,
-    }).isRequired
-  ).isRequired,
+  options: PropTypes.array.isRequired,
 };
